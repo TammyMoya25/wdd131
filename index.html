@@ -1,14 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 – Dynamic Web Fundamentals – Tamara Moya</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals.
+    Tamara Naomi Moya Rodriguez.
+    This is a HTML, CSS and JavaScript, web development home page" />
+    <meta name="author" content="Tamara Moya" />
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Hi, this is Tammy.</h1>
+    <header>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
+        <nav>
+            <a
+                href="https://www.linkedin.com/in/tamara-moya-rodr%C3%ADguez-ba29a9363?utm_source=share_via&utm_content=profile&utm_medium=member_ios">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/14?lang=eng&id=p14#p14">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Tamara Moya</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img class="profile-image" src="images/profile.jpg" alt="Photo of Tamara Moya">
+            <p>My name is Tamara and I am from Costa Rica. I enjoy learning web
+                development, watching tv shows, and spending time with
+                family and friends.</p>
+            <h3>San Jose, Costa Rica</h3>
+            <img src="images/costa-rica-flag.jpg" alt="Official flag of Costa Rica">
+            <p>Official Flag of Costa Rica</p>
+            <p>Costa Rica is known for its beautiful beaches, rainforests,
+                volcanoes, and biodiversity. It is famous for ecotourism and
+                peaceful living.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://dev.to/">Dev.to Community</a>
+                </li>
+                <li>
+                    <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                </li>
+                <li>
+                    <a href="https://css-tricks.com/">CSS Tricks</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/">W3 Schools</a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.udemy.com/?srsltid=AfmBOopvyN9yCzq7YCK9wSa3xSqUXgt5MXbNts2I1vjDY68zD3vOhBWP">Udemy</a>
+                </li>
+                <li>
+                    <a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Tamara Moya - Costa Rica</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
