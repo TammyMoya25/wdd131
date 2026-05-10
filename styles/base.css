@@ -118,14 +118,14 @@ main h1 {
     border: 1px solid #999;
 }
 
-.card img:not(.profile-image) {
+.flag-image {
     width: 100px;
     float: left;
     margin: 1rem 1rem 0.3rem 1rem;
     border: 1px solid #999;
 }
 
-.card img:not(.profile-image)+p {
+.flag-image+p {
     float: left;
     clear: left;
     width: 100px;
@@ -135,7 +135,7 @@ main h1 {
     margin-left: 1rem;
 }
 
-.card img:not(.profile-image)+p+p {
+.flag-image+p+p {
     padding-top: 1rem;
 }
 
