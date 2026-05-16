@@ -82,7 +82,7 @@ header h1 {
 /* MAIN */
 
 main {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -108,7 +108,9 @@ figure {
 figure img {
     width: 100%;
     max-width: 350px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+
     box-shadow: 0 0 10px gray;
 }
 
