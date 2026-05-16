@@ -10,7 +10,7 @@
         align-items: center;
     }
 
-    .navigation {
+    nav {
         flex-direction: row;
     }
 
