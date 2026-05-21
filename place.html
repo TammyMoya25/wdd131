@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>Costa Rica | WDD131</title>
+    <meta name="description" content="Country page about Costa Rica.">
+    <meta name="author" content="Tamara Moya">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=/Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Costa Rica</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <img src="images/hero-small.webp" alt="Beautiful view of Costa Rica" width="500" height="300">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 51,100 km²</p>
+            <p><strong>Population:</strong> 5.2 million</p>
+            <p><strong>Capital:</strong> San José</p>
+            <p><strong>Languages:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Costa Rican Colón</p>
+            <p><strong>Time Zone:</strong> UTC -6</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tamara Moya - <span id="year"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
