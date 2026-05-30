@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #3d0066;
+    --secondary-color: #ffffff;
+    --background-color: #f2f2f2;
+    --hover-color: #d9b3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: #000000;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.navigation a:focus {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+/* OPEN MENU */
+
+.open a {
+    display: block;
+}
+
+/* MAIN */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery section {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery section h3 {
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+}
+
+.gallery section p {
+    margin: .25rem 0;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 10px #808080;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    margin-top: 0.5rem;
+}
