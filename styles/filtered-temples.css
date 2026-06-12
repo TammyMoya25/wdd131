@@ -103,21 +103,15 @@ main h2 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-.gallery section {
-    background: var(--secondary-color);
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
 }
 
 .gallery img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .gallery section h3 {
@@ -125,30 +119,25 @@ main h2 {
     margin-bottom: .5rem;
 }
 
-.gallery section p {
-    margin: .25rem 0;
-}
-
-figure {
+.gallery section {
+    background: var(--secondary-color);
+    padding: 1rem;
     text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
 }
 
-figure img {
-    width: 100%;
-    max-width: 350px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgb(128, 128, 128);
+.gallery section h3 {
+    margin-bottom: .75rem;
 }
 
-figcaption {
-    margin-top: 0.5rem;
-    color: var(--primary-color);
-    font-size: 1.1rem;
+.gallery section p {
+    margin: .4rem 0;
 }
 
 /* FOOTER */
-
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);

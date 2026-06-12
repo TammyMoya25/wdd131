@@ -152,5 +152,6 @@ document.querySelector("#small").addEventListener("click", () => {
 });
 
 document.querySelector("#home").addEventListener("click", () => {
+    pageTitle.textContent = "Home";
     displayTemples(temples);
 });
