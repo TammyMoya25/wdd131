@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad in DR | Destinations</title>
+    <meta name="description"
+        content="Your ultimate guide to spending 1 amazing month as a digital nomad in the Dominican Republic.">
+    <meta name="author" content="Tamara Moya">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🌴💻 Nomad in DR</div>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="planner.html">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h2>Best Places to Stay</h2>
+            <p>Compare Dominican Republic's top destinations tailored for remote work.</p>
+
+            <div class="filter-container">
+                <label for="filter-vibe">Filter by Vibe:</label>
+                <select id="filter-vibe">
+                    <option value="all">All Locations</option>
+                    <option value="city">City Life</option>
+                    <option value="beach">Beach Vibe</option>
+                    <option value="active">Active & Sports</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="destinations-grid" class="grid-gallery">
+        </section>
+
+        <section class="quick-stats">
+            <div class="stat-item">ℹ️ <strong>WiFi Speed:</strong> 20 - 100 Mbps</div>
+            <div class="stat-item">💰 <strong>Monthly Budget:</strong> $1,000 - $1,800 USD</div>
+            <div class="stat-item">📅 <strong>Best Time:</strong> Dec - Apr</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Tamara Moya | WDD 131</p>
+        <p><a href="references.html">Project References</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+
+</html>
