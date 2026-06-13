@@ -1,32 +1,32 @@
-// Data Objects and Arrays
+// Data Objects and Arrays using local image paths
 const destinations = [
     {
         name: "Punta Cana",
         cost: "$1,300",
         vibe: "beach",
         features: ["⚡ Fast WiFi", "🏖️ Unmatched Beaches", "✈️ Near Airport"],
-        img: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=500&q=80"
+        img: "images/punta-cana.webp"
     },
     {
         name: "Santo Domingo",
         cost: "$1,000",
         vibe: "city",
         features: ["🏙️ City Life", "☕ Cool Coworkings", "🇩🇴 Rich Culture/History"],
-        img: "https://images.unsplash.com/photo-1590055531811-16a43b1965e7?auto=format&fit=crop&w=500&q=80"
+        img: "images/santo-domingo.webp"
     },
     {
         name: "Las Terrenas",
         cost: "$1,100",
         vibe: "beach",
         features: ["🥥 Relaxed Vibes", "🌴 Beautiful Beaches", "🚲 Great for Long Stays"],
-        img: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=500&q=80"
+        img: "images/las-terrenas.webp"
     },
     {
         name: "Cabarete",
         cost: "$1,000",
         vibe: "active",
         features: ["🏄 Great for Water Sports", "👥 Active Community", "🍹 Incredible Nightlife"],
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80"
+        img: "images/cabarete.webp"
     }
 ];
 
