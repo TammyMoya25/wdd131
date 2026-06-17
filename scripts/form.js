@@ -28,17 +28,23 @@ const products = [
 
 const productSelect = document.querySelector("#productName");
 
-products.forEach(product => {
-    const option = document.createElement("option");
+if (productSelect) {
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id; // Siguiendo las instrucciones, se usa id como value
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
 
-    option.value = product.id;
-    option.textContent = product.name;
+// Actualizar año actual en el footer
+const yearElement = document.querySelector("#currentyear");
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
 
-    productSelect.appendChild(option);
-});
-
-document.querySelector("#currentyear").textContent =
-    new Date().getFullYear();
-
-document.querySelector("#lastModified").textContent =
-    `Last Modification: ${document.lastModified}`;
+// Actualizar última fecha de modificación en el footer
+const modifiedElement = document.querySelector("#lastModified");
+if (modifiedElement) {
+    modifiedElement.textContent = `Last Modification: ${document.lastModified}`;
+}
