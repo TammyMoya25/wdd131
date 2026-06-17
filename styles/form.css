@@ -1,9 +1,9 @@
 :root {
-    --primary: #3d0066;
-    --secondary: #ffffff;
-    --background: #f4f4f4;
-    --border-color: #cccccc;
-    --shadow-color: #000000;
+    --primary: rgb(61, 0, 102);
+    --secondary: rgb(255, 255, 255);
+    --background: rgb(244, 244, 244);
+    --border-color: rgb(204, 204, 204);
+    --shadow-color: rgb(0, 0, 0);
 }
 
 * {
